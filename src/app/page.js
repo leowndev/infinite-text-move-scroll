@@ -13,7 +13,7 @@ export default function Home() {
   // get slider
   const slider = useRef(null)
 
-  let direction = 1 // negative = left, positive = right
+  let direction = -1 // negative = left, positive = right
   let xPercentage = 0
 
   useEffect(() => {
