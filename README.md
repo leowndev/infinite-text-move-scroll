@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/leowndev/infinite-text-move-scroll?color=%2304D361">
 
-## Getting Started
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/leowndev/infinite-text-move-scroll">
 
-First, run the development server:
+  <a href="https://github.com/leowndev/infinite-text-move-scroll/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/leowndev/infinite-text-move-scroll">
+  </a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  </a>
+</p>
+
+## About 
+
+Infinite text move animation that changes text direction based on scroll.
+
+## Demo 👀
+
+<img 
+    style="width: 800px;"
+    src="https://github.com/leowndev/infinite-text-move-scroll/assets/150629438/c1e8c0e2-0406-4a8b-bfba-71bc9bd99076" 
+    alt="Screen capture showing an animation of a text going from right to the left"></img>
+
+## Technologies 🛠️
+
+Main used tools/technologies:
+
+- CSS
+- GSAP
+- React.js
+- Next.js
+    
+
+## How to run this project 🏃
+
+If you to run this project locally, please follow the instructions bellow:
+
+1. Install [Node.js](https://nodejs.org/en) on your local machine. If you already have Node.js ignore this step.
+2. Clone this repository
+3. Open your terminal and run this commands:
+
+```shell
+npm install # install project dependencies
+npm run dev # start project locally. Probably it will be available on: localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Special Thanks 🙏
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-  To Olivier Larose for this amazing [video tutorial](https://www.youtube.com/watch?v=AqMESJ51e3o).
