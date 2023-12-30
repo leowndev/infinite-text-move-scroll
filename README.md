@@ -32,6 +32,7 @@ Main used tools/technologies:
 - GSAP
 - React.js
 - Next.js
+- Vercel (host)
     
 
 ## How to run this project 🏃
