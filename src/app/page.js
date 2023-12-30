@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import gasp from 'gsap'
+import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 
 export default function Home() {
@@ -10,12 +10,18 @@ export default function Home() {
   const firstText = useRef(null)
   const secondText = useRef(null)
 
+  let direction = -1 // negative = left, positive = right
+  let xPercentage = 0
+
   useEffect(() => {
     requestAnimationFrame(animation)
   }, [])
 
   const animation = () => {
-    console.log('animation')
+    gsap.set(firstText.current, { xPercent: xPercentage}),
+    gsap.set(secondText.current, { xPercent: xPercentage })
+    xPercentage += 0.1 * direction
+    requestAnimationFrame(animation)
   }
 
   return (
