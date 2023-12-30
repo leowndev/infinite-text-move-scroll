@@ -10,3 +10,26 @@
 .main img{
  object-fit: cover;
 }
+
+.sliderContainer {
+  position: absolute;
+  top: calc(100vh - 300px);
+}
+
+.slider {
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+}
+
+.slider p {
+  margin: 0px;
+  color: white;
+  font-size: 15rem; /* 240px*/
+  font-weight: 500;
+}
+
+.slider p:nth-child(2) {
+  position: absolute;
+  left: 100%;
+}
