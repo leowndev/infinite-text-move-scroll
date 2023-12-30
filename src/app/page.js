@@ -9,6 +9,8 @@ export default function Home() {
   // get text elements
   const firstText = useRef(null)
   const secondText = useRef(null)
+  // get slider
+  const slider = useRef(null)
 
   let direction = 1 // negative = left, positive = right
   let xPercentage = 0
@@ -43,7 +45,7 @@ export default function Home() {
       />
 
       <div className={styles.sliderContainer}>
-        <div className={styles.slider}>
+        <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Infinite Text -</p>
           <p ref={secondText}>Infinite Text -</p>
         </div>
