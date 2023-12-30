@@ -17,6 +17,8 @@ Infinite text move animation that changes text direction based on scroll.
 
 ## Demo 👀
 
+[🌐 Visite online demo &#x2197;](https://infinite-text-move-scroll.vercel.app/)
+
 <img 
     style="width: 800px;"
     src="https://github.com/leowndev/infinite-text-move-scroll/assets/150629438/c1e8c0e2-0406-4a8b-bfba-71bc9bd99076" 
