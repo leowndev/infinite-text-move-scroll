@@ -18,6 +18,11 @@ export default function Home() {
   }, [])
 
   const animation = () => {
+    if(xPercentage <= -100) {
+      xPercentage = 0
+    }
+
+
     gsap.set(firstText.current, { xPercent: xPercentage}),
     gsap.set(secondText.current, { xPercent: xPercentage })
     xPercentage += 0.1 * direction
