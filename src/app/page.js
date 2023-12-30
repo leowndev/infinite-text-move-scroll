@@ -3,9 +3,12 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 import gasp from 'gsap'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function Home() {
+  // get text elements
+  const firstText = useRef(null)
+  const secondText = useRef(null)
 
   useEffect(() => {
     requestAnimationFrame(animation)
@@ -25,8 +28,8 @@ export default function Home() {
 
       <div className={styles.sliderContainer}>
         <div className={styles.slider}>
-          <p>Infinite Text -</p>
-          <p>Infinite Text -</p>
+          <p ref={firstText}>Infinite Text -</p>
+          <p ref={secondText}>Infinite Text -</p>
         </div>
       </div>
     </main>
