@@ -4,6 +4,7 @@ import styles from './page.module.css'
 
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 export default function Home() {
   // get text elements
@@ -16,7 +17,19 @@ export default function Home() {
   let xPercentage = 0
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
     requestAnimationFrame(animation)
+
+    gsap.to(slider.current, {
+      scrollTrigger: {
+        trigger: document.documentElement,
+        start: 0,
+        end: window.innerHeight,
+        scrub: true,
+        onUpdate: event => direction = event.direction * -1
+      },
+      x: "-=300px"
+    })
   }, [])
 
   const animation = () => {
@@ -50,6 +63,8 @@ export default function Home() {
           <p ref={secondText}>Infinite Text -</p>
         </div>
       </div>
+
+      <div className={styles.emptySpace}></div>
     </main>
   )
 }
