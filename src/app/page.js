@@ -63,8 +63,6 @@ export default function Home() {
           <p ref={secondText}>Infinite Text -</p>
         </div>
       </div>
-
-      <div className={styles.emptySpace}></div>
     </main>
   )
 }
